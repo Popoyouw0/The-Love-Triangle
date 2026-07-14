@@ -815,6 +815,33 @@ screen preferences():
             text_size 26 text_color "#5d5d2d" text_align (0.5, 0.5)
             text_bold True
             xsize 220 ysize 75
+
+        # --- BAHASA / LANGUAGE ---
+    vbox:
+        xpos 950
+        ypos 850
+        spacing 10
+
+        text "LANGUAGE" size 26 color "#5d5d2d" bold True
+
+        hbox:
+            spacing 20
+
+            textbutton "INDONESIA":
+                action Language(None)
+                background Transform("gui/button/button_idle.png", size=(220, 75))
+                hover_background Transform("gui/button/button_hover.png", size=(220, 75))
+                text_size 26 text_color "#5d5d2d" text_align (0.5, 0.5)
+                text_bold True
+                xsize 220 ysize 75
+
+            textbutton "ENGLISH":
+                action Language("English")
+                background Transform("gui/button/button_idle.png", size=(220, 75))
+                hover_background Transform("gui/button/button_hover.png", size=(220, 75))
+                text_size 26 text_color "#5d5d2d" text_align (0.5, 0.5)
+                text_bold True
+                xsize 220 ysize 75
 # 3. SLIDER SETTING VOLUME & TEXT SPEED
     # Menggunakan ysize kecil (40) agar thumb otomatis di tengah bar
     
